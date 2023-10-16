@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #3d70b2;
+    --secondary-color: #5596e6;
+    --tertiary-color: #41d6c3;
+    --bg-color-1: #ffffff;
+    --bg-color-2: #f5f7fa;
+    --bg-color-3: #f0f3f6;
+    --bg-color-4: #dfe3e6;
+    --bg-color-5: #8c9ba5;
+    --text-color-1: #222;
+    --text-color-2: #333;
+    --text-color-3: #444;
+    --text-color-3: #555;
+    --text-color-4: #999;
+}
+
+body {
+    background-color: var(--bg-color-2);
+    min-width: 360px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Apple SD Gothic Neo", Arial;
+}

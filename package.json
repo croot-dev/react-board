@@ -1,0 +1,25 @@
+{
+  "name": "react-board",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "apps/client/*",
+    "apps/server/*"
+  ],
+  "scripts": {
+    "start": "pnpm run --parallel start",
+    "dev": "pnpm run --parallel dev",
+    "export": "pnpm run --parallel export"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.9.0"
+  },
+  "packageManager": "pnpm@8.9.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/croot-dev/react-board.git"
+  }
+}
