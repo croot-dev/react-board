@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "module": "ESNext",
+      "target": "ES6",
+      "lib": ["ES6", "dom"],
+      "sourceMap": true,
+      "allowJs": false,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "rootDirs": ["components"],
+      "baseUrl": ".",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "noUnusedLocals": true,
+      "esModuleInterop": true,
+      "declaration": true,
+      "skipLibCheck": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "paths": {
+        "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
+      },
+    },
+    "include": ["components/**/*"],
+    "exclude": ["node_modules", "dist", "**/*.stories.tsx"]
+  }

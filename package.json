@@ -2,14 +2,10 @@
   "name": "react-board",
   "version": "1.0.0",
   "description": "",
-  "workspaces": [
-    "apps/client/*",
-    "apps/server/*"
-  ],
   "scripts": {
-    "start": "pnpm run --parallel start",
-    "dev": "pnpm run --parallel dev",
-    "export": "pnpm run --parallel export"
+    "start": "pnpm -F @react-board/common start",
+    "dev": "pnpm -F @react-board/client dev",
+    "build": "pnpm -F @react-board/common build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +17,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/croot-dev/react-board.git"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5"
   }
 }
