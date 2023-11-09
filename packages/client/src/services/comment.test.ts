@@ -29,8 +29,9 @@ describe('Comment API functions', () => {
   });
 
   it('should fetch a comment by ID', async () => {
+    const postId = 455;
     const commentId = 456;
-    const comment = await readComment(commentId);
+    const comment = await readComment(postId, commentId);
 
     expect(fetch).toHaveBeenCalledTimes(1);
     expect(fetch).toHaveBeenCalledWith(`${API_SERVER}/${API_COMMENT_URL}/${commentId}`);

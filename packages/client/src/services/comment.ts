@@ -4,7 +4,7 @@ import { API_SERVER, API_COMMENT_URL } from '@/constants';
 
 export const readCommentList = async (postId: string):Promise<IComment[]> => {
   try {
-    const result = await fetch(`${API_SERVER}/posts/${postId}/comments.json`);
+    const result = await fetch(`${API_SERVER}/${API_COMMENT_URL}/${postId}.json`);
     if (result.ok !== true) throw result;
     return result.json();
   } catch (error) {
@@ -12,11 +12,11 @@ export const readCommentList = async (postId: string):Promise<IComment[]> => {
   }
 };
 
-export const readComment = async (commentId: string): Promise<IComment> => {
+export const readComment = async (postId: string, commentId: string): Promise<IComment> => {
   try {
     if (!commentId) { throw new Error('Comment ID value is incorrect'); }
 
-    const result = await fetch(`${API_SERVER}/${API_COMMENT_URL}/${commentId}.json`);
+    const result = await fetch(`${API_SERVER}/${API_COMMENT_URL}/${postId}/${commentId}.json`);
     if (result.ok !== true) throw result;
     return result.json();
   } catch (error) {
@@ -28,7 +28,7 @@ type ICommentForm = Pick<IComment, 'parent'|'postId'|'writer'|'password'|'conten
 export const createComment = async (newPost: ICommentForm):Promise<IComment> => {
   try {
     const body = JSON.stringify(newPost);
-    const result = await fetch(`${API_SERVER}/${API_COMMENT_URL}.json`, {
+    const result = await fetch(`${API_SERVER}/${API_COMMENT_URL}/${newPost.postId}.json`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,7 +36,8 @@ export const createComment = async (newPost: ICommentForm):Promise<IComment> => 
       body,
     });
     if (result.ok !== true) throw result;
-    return result.json();
+    const json = await result.json();
+    return { ...newPost, id: json.name };
   } catch (error) {
     throw new CustomException(error);
   }

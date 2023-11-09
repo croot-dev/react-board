@@ -71,6 +71,7 @@ export default function commentForm({
     };
     try {
       const result = await createComment(params);
+      debugger;
       setCommentList([...commentList, result]);
       clearForm();
       window.alert('등록되었습니다.');

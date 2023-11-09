@@ -7,10 +7,10 @@ import {
 } from 'react';
 import { BiCommentDetail, BiSolidUserCircle } from 'react-icons/bi';
 import { confirmAlert } from 'react-confirm-alert';
-import type { CustomError, IComment } from '@/types';
 import {
   Button, Row, Col, Input, Textarea,
 } from '@react-board/common';
+import type { CustomError, IComment } from '@/types';
 import CommentForm from '@/components/Comment/CommentForm';
 import { PostViewContext } from '@/contexts/postViewContext';
 import { replyDepthLimit } from '@/constants';

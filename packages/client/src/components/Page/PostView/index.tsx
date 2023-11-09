@@ -3,15 +3,15 @@
 /* eslint-disable react/no-unstable-nested-components */
 
 import {
-  useState, useEffect, useMemo, useContext,
+  useState, useEffect,
 } from 'react';
 import dynamic from 'next/dynamic';
 import dayjs from 'dayjs';
 import { confirmAlert } from 'react-confirm-alert';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { Link, Button } from '@react-board/common';
 import { deletePost, readPost } from '@/services/post';
 import type { CustomError, IPost } from '@/types';
-import { Link, Button } from '@react-board/common';
 import { PostViewContextProvider } from '@/contexts/postViewContext';
 import { PageWrapper } from '@/components/Layout';
 import { PostViewButtons, PostViewRow, PostViewFooter } from './page.style';

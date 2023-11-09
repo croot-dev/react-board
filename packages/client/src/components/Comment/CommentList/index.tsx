@@ -15,7 +15,8 @@ export default function CommentList({ postId }: { postId: string }) {
   const getCommentList = async () => {
     try {
       const result = await readCommentList(postId);
-      setCommentList(result || []);
+      const newCommentList = Object.entries(result).map(([id, value]) => ({ ...value, id }));
+      setCommentList(newCommentList || []);
     } catch (error) {
       window.alert((error as CustomError).message);
       // console.log(error);
@@ -42,7 +43,7 @@ export default function CommentList({ postId }: { postId: string }) {
         { (rootCommentList.length === 0)
           ? <CommentEmpty>댓글이 없습니다.</CommentEmpty>
           : rootCommentList
-            .map((comment) => (
+            .map((comment, index) => (
               <CommentListItem key={comment.id} commentData={comment} />
             ))}
       </div>

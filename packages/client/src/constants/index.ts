@@ -15,7 +15,7 @@ export const orderOptions = [
   { label: '작성일 내림차순', value: 'created_at desc' },
 ];
 
-export const defaultSortOrder = 'created_at desc';
+export const defaultSortOrder = 'created_at asc';
 
 export const replyDepthLimit = 3;
 

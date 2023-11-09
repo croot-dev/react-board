@@ -1,0 +1,101 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "첫 번째 글",
+        "content": "이것은 첫 번째 게시글입니다.",
+        "writer": "John Doe",
+        "password": "abc123",
+        "created_at": "2023-11-09T08:00:00Z"
+      },
+      {
+        "id": 2,
+        "title": "두 번째 글",
+        "content": "두 번째 글 내용입니다.",
+        "writer": "Alice Smith",
+        "password": "def456",
+        "created_at": "2023-11-08T15:30:00Z"
+      },
+      {
+        "id": 3,
+        "title": "세 번째 글",
+        "content": "세 번째 게시글 내용입니다.",
+        "writer": "Ethan Johnson",
+        "password": "ghi789",
+        "created_at": "2023-11-07T10:45:00Z"
+      },
+      {
+        "id": 4,
+        "title": "네 번째 글",
+        "content": "네 번째 게시글 내용입니다.",
+        "writer": "Sophia Garcia",
+        "password": "jkl012",
+        "created_at": "2023-11-06T12:20:00Z"
+      },
+      {
+        "id": 5,
+        "title": "다섯 번째 글",
+        "content": "다섯 번째 게시글 내용입니다.",
+        "writer": "Oliver Rodriguez",
+        "password": "mno345",
+        "created_at": "2023-11-05T09:10:00Z"
+      },
+      {
+        "id": 6,
+        "title": "여섯 번째 글",
+        "content": "여섯 번째 게시글 내용입니다.",
+        "writer": "Luna Brown",
+        "password": "pqr678",
+        "created_at": "2023-11-04T17:55:00Z"
+      },
+      {
+        "id": 7,
+        "title": "일곱 번째 글",
+        "content": "일곱 번째 게시글 내용입니다.",
+        "writer": "William Lee",
+        "password": "stu901",
+        "created_at": "2023-11-03T14:40:00Z"
+      },
+      {
+        "id": 8,
+        "title": "여덟 번째 글",
+        "content": "여덟 번째 게시글 내용입니다.",
+        "writer": "Mia Martinez",
+        "password": "vwx234",
+        "created_at": "2023-11-02T11:25:00Z"
+      },
+      {
+        "id": 9,
+        "title": "아홉 번째 글",
+        "content": "아홉 번째 게시글 내용입니다.",
+        "writer": "James Wilson",
+        "password": "yza567",
+        "created_at": "2023-11-01T19:15:00Z"
+      },
+      {
+        "id": 10,
+        "title": "열 번째 글",
+        "content": "열 번째 게시글 내용입니다.",
+        "writer": "Ava Garcia",
+        "password": "bcd890",
+        "created_at": "2023-10-31T16:00:00Z"
+      },
+      {
+        "id": 11,
+        "title": "열한 번째 글",
+        "content": "열한 번째 게시글 내용입니다.",
+        "writer": "Elijah Johnson",
+        "password": "efg123",
+        "created_at": "2023-10-30T13:45:00Z"
+      },
+      {
+        "id": 12,
+        "title": "열두 번째 글",
+        "content": "열두 번째 게시글 내용입니다.",
+        "writer": "Emma Thomas",
+        "password": "hij456",
+        "created_at": "2023-10-29T20:30:00Z"
+      }
+    ]
+  }
+  

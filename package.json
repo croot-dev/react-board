@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "start": "pnpm -F @react-board/common start",
-    "dev": "pnpm -F @react-board/client dev",
-    "build": "pnpm -F @react-board/common build-storybook"
+    "dev": "pnpm -F @react-board/client dev"
   },
   "keywords": [],
   "author": "",

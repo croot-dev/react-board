@@ -1,5 +1,5 @@
+# [서비스 보러가기 (Link)](https://react-board-8bdfb.web.app/)
 ![Preview](./preview.gif)
-
 
 ## INDEX
 1. [How to run](#How-to-run)
@@ -13,6 +13,7 @@
 - PackageManager : pnpm@8.9.2
 - Style Lib : Emotion
 - Testing : Jest
+- Backend(FaaS) : Firebase + RealtimeDB 
 
 
 ## How to run
