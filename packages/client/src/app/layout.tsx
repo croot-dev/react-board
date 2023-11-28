@@ -1,8 +1,8 @@
-import React from 'react';
 import type { Metadata } from 'next';
 import '@/styles/reset.css';
 import '@/styles/global.css';
 import 'react-confirm-alert/src/react-confirm-alert.css';
+import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: 'React Board',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 interface IProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export default function RootLayout({ children }: IProps) {

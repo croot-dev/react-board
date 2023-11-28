@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "predeploy": "pnpm run export",
-    "public": "apps/client/out",
+    "predeploy": "pnpm export",
+    "public": "packages/client/out",
     "ignore": [
       "firebase.json",
       "**/.*",

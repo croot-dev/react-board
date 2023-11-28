@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "pnpm -F @react-board/common start",
-    "dev": "pnpm -F @react-board/client dev"
+    "dev": "pnpm -F @react-board/client dev",
+    "export": "pnpm -F @react-board/client export"
   },
   "keywords": [],
   "author": "",

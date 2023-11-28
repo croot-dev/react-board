@@ -37,7 +37,7 @@ export const createComment = async (newPost: ICommentForm):Promise<IComment> => 
     });
     if (result.ok !== true) throw result;
     const json = await result.json();
-    return { ...newPost, id: json.name };
+    return { ...newPost, id: json.name, created_at: '' };
   } catch (error) {
     throw new CustomException(error);
   }
